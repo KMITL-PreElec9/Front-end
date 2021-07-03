@@ -14,7 +14,7 @@ return (
           <li><a href="#covid">โควิด-19</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">ติดต่อเรา</a></li>
-          <li class="drop-down">
+          <li className="drop-down">
             <a>63010104@kmitl.ac.th</a>
             <ul>
               <center>
