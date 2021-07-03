@@ -1,6 +1,17 @@
 import React from "react";
 
-function Home() {
+fetch('http://127.0.0.1:8000/camp/api/user')
+.then((response)=>{
+  return response.json();
+})
+.then((json)=>{
+  const user = json.data;
+  email = user.email;
+})
+.catch((error)=>{
+  console.log(error.massage);
+})
+export default function Home(props) {
   return (
     <div className="home">
       <div class="container">
@@ -13,7 +24,7 @@ function Home() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Home</h1>
+            <h1 class="font-weight-light">Home{props.email}</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -26,5 +37,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

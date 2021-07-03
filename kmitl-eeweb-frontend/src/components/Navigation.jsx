@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-function Navigation(props) {
+export default function Navigation(props) {
 return (
   <div className="Navigation">
   <header id="header" class="fixed-top">
@@ -34,5 +34,3 @@ return (
   </div>
 );
 }
-
-export default withRouter(Navigation);

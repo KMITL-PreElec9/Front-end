@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Home, About, Contact } from "./components";
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Router>
@@ -17,4 +17,3 @@ function App() {
   );
 }
 
-export default App;
